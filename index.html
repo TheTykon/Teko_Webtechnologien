@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Website Semesterarbeit</title>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/brands.css">
+    <link rel="stylesheet" href="assets/css/solid.css">
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="lib/js/jquery-3.6.1.min.js"></script>
+    <script src="src/js/main.js"></script>
+</head>
+<body>
+<div id="header" class="container-fluid">
+    <div class="header-content">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i></a> </li>
+            <li><a onclick="ajaxLoad('about')" href="javascript:void(0);">About me</a></li>
+            <li>asdf</li>
+        </ul>
+    </div>
+</div>
+<div id="main" class="col-md-12 col-sm-12 row">
+    <p class="scroll-chevron">Scroll down <br>
+        <a class="scroll-link" href="javascript:void(0);"><i class="fa-solid fa-chevron-down"></i></a>
+    </p>
+    <div id="content" class="col-md-12 col-sm-12">
+        <div id="ajax-content">
+            <div class="home-content col-md-10 col-sm-12 md-offset-1">
+                <h1>Content section</h1>
+                <p>Welcome to this stupid little site i had to create for my stupid little advanced education project.</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="footer-content row">
+        <p class="footer-left col-md-3 col-sm3"><i class="fas fa-copyright"></i> Tobias Schönthal</p>
+    </div>
+</div>
+<style>
+    body {
+        /* The image used */
+        background-image: url("assets/img/asdf1.jpg");
+
+        /* Set a specific height */
+        min-height: 100vh;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+<script>
+    $(".scroll-link").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#content").offset().top
+        }, 2000);
+    });
+
+</script>
+</body>
+</html>

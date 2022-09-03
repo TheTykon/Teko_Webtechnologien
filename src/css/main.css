@@ -1,0 +1,83 @@
+/* General styles */
+
+/* Header styles */
+#header{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    z-index: 2;
+}
+
+#header .header-content ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+#header .header-content ul{
+    margin: 0;
+}
+
+/* Content styles */
+#content{
+    background-color: rgba(2, 15, 33, 0.9);
+    text-align: center;
+    margin-bottom: 20vh;
+    color: white;
+}
+
+div#main {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+#main p i{
+    font-size: 3rem;
+}
+
+.scroll-chevron{
+    text-align: center;
+    margin: 90vh auto 0 auto;
+}
+
+.scroll-chevron{
+    color: white;
+}
+
+.scroll-chevron a{
+    color: white;
+}
+
+#content h1{
+    margin-top: 15px;
+}
+
+.home-content p{
+    line-break: auto;
+}
+
+.abt-pic{
+    max-width: 100%;
+    max-height: 30vh;
+}
+
+.desc{
+    margin: 0 auto;
+    text-align: left;
+}
+
+#ajax-content div{
+    margin-bottom: 15px;
+}
+
+/* Footer styles */
+#footer{
+    background: black;
+    min-height: 50px;
+    color: white;
+}
+
+.footer-left{
+    margin: 10px 15px;
+}
