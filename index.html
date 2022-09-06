@@ -6,7 +6,7 @@
     <title>Website Semesterarbeit</title>
 
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css" >
     <link rel="stylesheet" href="assets/css/brands.css">
     <link rel="stylesheet" href="assets/css/solid.css">
     <link rel="stylesheet" href="src/css/main.css">
@@ -14,6 +14,7 @@
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="lib/js/jquery-3.6.1.min.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/game.js"></script>
 </head>
 <body>
 <div id="header" class="container-fluid">
@@ -21,7 +22,7 @@
         <ul>
             <li><a href="index.html"><i class="fas fa-home"></i></a> </li>
             <li><a onclick="ajaxLoad('about')" href="javascript:void(0);">About me</a></li>
-            <li>asdf</li>
+            <li><a onclick="ajaxLoad('play')" href="javascript:void(0);">Play</a></li>
         </ul>
     </div>
 </div>
@@ -33,6 +34,13 @@
         <div id="ajax-content">
             <div class="home-content col-md-10 col-sm-12 offset-md-1">
                 <h1>Content section</h1>
+                <p>Welcome to this stupid little site i had to create for my stupid little advanced education project.</p>
+                <p>Lorem ipsum dolorasdf sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse</p>
+            </div>
+            <div class="home-content col-md-10 col-sm-12 offset-md-1">
+                <h2>Content section</h2>
                 <p>Welcome to this stupid little site i had to create for my stupid little advanced education project.</p>
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -48,13 +56,9 @@
 </div>
 <style>
     body {
-        /* The image used */
+        /* Parallax effect */
         background-image: url("assets/img/asdf1.jpg");
-
-        /* Set a specific height */
         min-height: 100vh;
-
-        /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;

@@ -1,4 +1,9 @@
 /* General styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* Header styles */
 #header{
@@ -49,7 +54,7 @@ div#main {
     color: white;
 }
 
-#content h1{
+#content h1, #content h2{
     margin-top: 15px;
 }
 
@@ -71,6 +76,10 @@ div#main {
     margin-bottom: 15px;
 }
 
+.play p{
+    margin: 10px auto;
+}
+
 /* Footer styles */
 #footer{
     background: black;
@@ -80,4 +89,53 @@ div#main {
 
 .footer-left{
     margin: 10px 15px;
+}
+
+/* Game Styles */
+.game{
+    height: 400px;
+    width: 80vw;
+    border: 1px solid black;
+    background: white;
+    margin: 0;
+}
+
+.player {
+    height: 100px;
+    width: 80px;
+    background-image: url("../../assets/img/asdf3.png");
+    background-repeat: no-repeat;
+    position: relative;
+    top: 295px;
+    left: 5px;
+    margin: 0;
+    background-size: cover;
+}
+
+.obst{
+    width: 85px;
+    height: 60px;
+    background-image: url("../../assets/img/asdf4.png");
+    position: relative;
+    top: 223px;
+    left: calc(80vw - 85px);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: evil_teko 1.5s infinite linear;
+}
+
+@keyframes evil_teko{
+    0%{left: calc(80vw - 85px);}
+    100%{left: -85px;}
+}
+
+.jumping{
+    animation: yeet 0.4s linear;
+}
+
+@keyframes yeet{
+    0%{top: 295px;}
+    40%{top: 200px;}
+    70%{top: 200px;}
+    100%{top: 295px;}
 }
