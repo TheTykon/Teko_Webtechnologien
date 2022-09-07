@@ -76,7 +76,7 @@ div#main {
     margin-bottom: 15px;
 }
 
-.play p{
+#play p{
     margin: 10px auto;
 }
 
@@ -101,27 +101,24 @@ div#main {
 }
 
 .player {
-    height: 200px;
+    height: 140px;
     width: 80px;
-    background-image: url("../../assets/img/asdf3.png");
-    background-repeat: no-repeat;
     position: relative;
-    top: 198px;
+    top: 261px;
     left: 5px;
     margin: 0;
-    background-size: cover;
 }
 
 .obst{
-    width: 85px;
-    height: 60px;
+    width: 60px;
+    height: 43px;
     background-image: url("../../assets/img/asdf4.png");
     position: relative;
-    top: 123px;
-    left: calc(80vw - 85px);
+    top: 200px;
+    left: calc(80vw - 62px);
     background-size: contain;
     background-repeat: no-repeat;
-    animation: evil_teko 1.5s infinite linear;
+    animation: evil_teko 1s infinite linear;
 }
 
 @keyframes evil_teko{
@@ -130,12 +127,18 @@ div#main {
 }
 
 .jumping{
-    animation: yeet 0.8s linear;
+    animation: yeet 1s linear;
 }
 
 @keyframes yeet{
-    0%{top: 198px;}
-    20%{top: 100px;}
-    90%{top: 100px;}
-    100%{top: 198px;}
+    0%{top: 261px;}
+    20%{top: 180px;}
+    40%{top: 150px;}
+    60%{top: 150px;}
+    80%{top: 200px;}
+    100%{top: 261px;}
+}
+
+.player img{
+    height: 140px;
 }
