@@ -101,12 +101,12 @@ div#main {
 }
 
 .player {
-    height: 100px;
+    height: 200px;
     width: 80px;
     background-image: url("../../assets/img/asdf3.png");
     background-repeat: no-repeat;
     position: relative;
-    top: 295px;
+    top: 198px;
     left: 5px;
     margin: 0;
     background-size: cover;
@@ -117,7 +117,7 @@ div#main {
     height: 60px;
     background-image: url("../../assets/img/asdf4.png");
     position: relative;
-    top: 223px;
+    top: 123px;
     left: calc(80vw - 85px);
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,12 +130,12 @@ div#main {
 }
 
 .jumping{
-    animation: yeet 0.4s linear;
+    animation: yeet 0.8s linear;
 }
 
 @keyframes yeet{
-    0%{top: 295px;}
-    40%{top: 200px;}
-    70%{top: 200px;}
-    100%{top: 295px;}
+    0%{top: 198px;}
+    20%{top: 100px;}
+    90%{top: 100px;}
+    100%{top: 198px;}
 }
