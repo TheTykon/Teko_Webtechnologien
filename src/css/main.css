@@ -23,6 +23,10 @@
     margin: 0;
 }
 
+#header a{
+    color: white;
+}
+
 /* Content styles */
 #content{
     background-color: rgba(2, 15, 33, 0.9);
@@ -118,6 +122,9 @@ div#main {
     left: calc(80vw - 62px);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.game.started .obst{
     animation: evil_teko 1s infinite linear;
 }
 
@@ -141,4 +148,24 @@ div#main {
 
 .player img{
     height: 140px;
+}
+
+.game-wrapper.active {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 15, 33, 0.9);
+}
+
+.game-wrapper i{
+    display: none;
+}
+
+.game-wrapper.active i.fa-solid.fa-play {
+    position: absolute;
+    font-size: 2rem;
+    padding: 15px;
+    background: grey;
+    border-radius: 10px;
+    margin-top: 167px;
+    display: initial;
 }

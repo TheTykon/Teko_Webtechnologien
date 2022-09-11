@@ -2,6 +2,15 @@ let player = '.player';
 let obstacle = '.obst';
 let score = 0;
 
+$(function(e){
+    $(document).keydown(function(e){
+        if(e.which == 38){
+            yeet();
+            e.preventDefault();
+        }
+    });
+});
+
 function yeet(){
     if ($(player).hasClass("jumping")){
         return;
@@ -12,18 +21,23 @@ function yeet(){
     }, 500);
 }
 
-let DOA = setInterval(function () {
-    let plVal = parseInt($('.player').css("top"));
-    let obstPos = $('.obst').position().left;
-    //console.log($('.player').position().top);
-    if (obstPos<60 && obstPos>-40 && plVal>=220){
-        $(obstacle).css("animation", "none");
-        alert("u ded boi - Score: " + Math.floor(score/100));
-        score = 0;
-        $(obstacle).css("animation", "evil_teko 1s infinite linear");
+function togglePlay() {
+    $(".game").addClass("started");
+    $(".game-wrapper").removeClass("active");
+}
 
-    } else{
-        score++;
-        $(".score span").html(Math.floor(score/100));
+let DOA = setInterval(function () {
+    if($(".game").hasClass("started")){
+        let plVal = parseInt($('.player').css("top"));
+        let obstPos = $('.obst').position().left;
+        if (obstPos<60 && obstPos>-40 && plVal>=220){
+            $(".game").removeClass("started");
+            $(".game-wrapper").addClass("active");
+            score = 0;
+
+        } else{
+            score++;
+            $(".score span").html(Math.floor(score/100));
+        }
     }
 }, 10);

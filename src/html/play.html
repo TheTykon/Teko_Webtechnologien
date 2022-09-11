@@ -1,12 +1,16 @@
 <h1>Jump n' run, Teko Edition</h1>
 <div class="row" id="play">
-    <p>Try to survive as many exercises as possible</p>
+    <p>Try to survive as many Teko days as possible <br>
+    Use the "Arrow up" key to jump</p>
     <div class="col-md-10 col-sm-12 offset-md-1">
-       <div class="game" onclick="yeet()">
-           <div class="player">
-               <img src="/Teko_Webtechnologien/assets/img/asdf3.png">
+       <div class="game">
+           <div class="game-wrapper active">
+               <i class="fa-solid fa-play" onclick="togglePlay()"></i>
+               <div class="player">
+                   <img src="/Teko_Webtechnologien/assets/img/asdf3.png">
+               </div>
+               <div class="obst"></div>
            </div>
-           <div class="obst"></div>
        </div>
         <p class="score">Score: <span>0</span></p>
     </div>
